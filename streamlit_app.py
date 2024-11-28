@@ -47,7 +47,7 @@ solutions within the higher education industry.
 - Pioneered AI taskforce and AI training program, enhancing AI literacy and innovation among 500+ employees.
 - Led ideation, development, prompt engineering, and project management of AI-powered microsite chatbot known as EngageAI, sold to university partners, and launched pilot, leading to a 30% increase in prospect conversions, a 15% rise in enrollment rates. This tool leverages a RAG infrastructure, expert prompt engineering, and key automations to have escalation paths to humans. This tool helps prospective users determine if a program is the right fit for them. 
 - Developed and launched a multimodal AI-driven course for practicing conversations with real-time feedback; aiming to break down barriers on college campuses to encourage healthy and productive debate amongst students. managed stakeholders across leadership, universities, and AI teams. Scaled from pilot to adoption boosting student communication skills across the country. 
-- Manage AI: Created AI-powered analytics tool and recommendation engine utilizing predictive modeling to enhance marketing and enrollment strategies. It was a product offered by noodle, known as N:manage, that provided dashboard-style analytics to universities to provide information about program health and performance. Alex strategized, built, and rolled out a solution that enabled a trained LLM to assess the data provided in the Manage platform to provide natural language reporting, and chat-based insights. 
+- Manage AI: Created AI-powered analytics tool and recommendation engine utilizing predictive modeling to enhance marketing and enrollment strategies. It was a product offered by noodle, known as N:manage, that provided dashboard-style analytics to universities to provide information about program health and performance. Alex strategized, built, and rolled out a solution that enabled a trained LLM to assess the data provided in the Manage platform to provide natural language reporting, and chat-based insights. The process to create this was first gathering domain expertise from all key stakeholders, connecting essential data models, rigorous QA testing of LLM outputs, ensuring security compliance, gathering client feedback, and contunious enhancements.
 - Negotiated and managed strategic partnerships with AWS, resulting in $200k annual savings.
 - Developed an automated proposal generation tool for sales, minimizing outreach to proposal timelines by 40%.
 Finance & Planning Analyst, Marketing Operations March 2022 – April 2023
@@ -110,8 +110,8 @@ If you're excited about shaping the future of conversational AI and want to be a
 
     # Define the messages for the buttons
     button_messages = {
-        "Alex's technical experience": "Describe Alex's technical level (mention that he built the app that you are on right now using python, github repos, and CSS design), practical (leading a technical team of AI engineers to create a suite of projects) and theoretical (leading a company into the age of AI while keeping long term strategy top of mind). Include Alex's experience in each component of your response.",
-        "Project Story": "Share a story about Alex's accomplishments with one of three projects. Ask the user to clarify if they want to hear about 1) Alex's first AI project, developing a microsite chatbot 2) ManageAI or 3) AI Civics Course Launch. Once they pick one of the three options, then continue to tell the selected story",
+        "Alex's Technical Experience": "Describe Alex's technical level (mention that he built the app that you are on right now using python, github repos, and CSS design), practical (leading a technical team of AI engineers to create a suite of projects) and theoretical (leading a company into the age of AI while keeping long term strategy top of mind).",
+        "Project Story": "Share the story about how Alex added Manage AI to N:Manage to completely change Noodle's product offering",
         "Why AUI": "Explain using all of the information that you have about Alex and AUI why is Alex interested in joining AUI and why he is the perfect candidate for the job."
     }
 
@@ -212,9 +212,9 @@ If you're excited about shaping the future of conversational AI and want to be a
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            if st.button("Alex's technical experience"):
+            if st.button("Alex's Technical Experience"):
                 st.session_state.button_clicked = True
-                st.session_state.button_message = button_messages["Alex's technical experience"]
+                st.session_state.button_message = button_messages["Alex's Technical Experience"]
                 st.session_state.display_message = False
 
         with col2:
